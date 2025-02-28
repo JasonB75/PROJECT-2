@@ -1,6 +1,6 @@
 from multiprocessing.connection import Listener
 
-listener = Listener(('localhost', 6001), authkey=b'secret password')
+listener = Listener(('localhost', 6000), authkey=b'secret password')
 running = True
 while running:
     conn = listener.accept()
